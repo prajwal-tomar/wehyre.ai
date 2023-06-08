@@ -4,20 +4,36 @@ import { Container, Card, Button } from "react-bootstrap";
 const Home = () => {
   return (
     <div>
-      <Card bg="primary" text="white" className="text-center">
-        <Card.Body>
-          <Card.Title className="display-4">
+      <div className="bg-primary text-white text-center py-5">
+        <Container>
+          <h1 className="display-4 mb-4">
             Connecting Talented Job Seekers with the Right Employers
-          </Card.Title>
-          <Card.Text className="lead">
+          </h1>
+          <p className="lead mb-4">
             Welcome to wehyre.ai - your gateway to finding the perfect job
-            opportunity.
-          </Card.Text>
+            opportunity. <br /> Find your dream job today!
+          </p>
           <Button variant="light" size="lg" href="/job-listings">
             Find Jobs
           </Button>
-        </Card.Body>
-      </Card>
+        </Container>
+      </div>
+
+      <div className="bg-dark text-white py-2">
+        <Container>
+          <div className="flex justify-center gap-8 align-items-center">
+            <h5 className="mb-2 text-center">Ready to take the next step?</h5>
+            <Button
+              variant="outline-light"
+              size="lg"
+              href="/cv-upload"
+              style={{ borderColor: "green", color: "green" }}
+            >
+              Upload Your CV
+            </Button>
+          </div>
+        </Container>
+      </div>
 
       <Container className="my-5">
         <h2 className="text-center mb-4 font-semibold">
@@ -73,11 +89,11 @@ const Home = () => {
               <div className="card-body">
                 <blockquote className="blockquote mb-0">
                   <p>
-                    "wehyre.ai made the recruitment process seamless and
-                    efficient. The AI resume scanning feature really helped us"
+                    "I had a fantastic experience using wehyre.ai. Their
+                    personalized job recommendations made my job search so much smoother."
                   </p>
                   <footer className="blockquote-footer">
-                    Jane Smith, HR Manager
+                    Jane Smith, Analyst
                   </footer>
                 </blockquote>
               </div>

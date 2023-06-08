@@ -44,18 +44,8 @@ const CustomNavbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/job-listings" className="nav-link">
-              Job Listings
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/cv-upload" className="nav-link">
-              CV Upload
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/employer-portal" className="nav-link">
-              Employer Portal
+            <Link to="/employers-home" className="nav-link">
+              For Employers
             </Link>
           </li>
           <li className="nav-item">
