@@ -1,14 +1,21 @@
 import React from "react";
-import { Container, Card, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Home = () => {
+  const { user, isAuthenticated } = useAuth0();
   return (
     <div>
       <div className="bg-primary text-white text-center py-5">
         <Container>
-          <h1 className="display-4 mb-4">
-            Connecting Talented Job Seekers with the Right Employers
-          </h1>
+          {isAuthenticated ? (
+            <h1 className="display-4 mb-4">Welcome, {user.name} </h1>
+          ) : (
+            <h1 className="display-4 mb-4">
+              Connecting Talented Job Seekers with the Right Employers
+            </h1>
+          )}
+
           <p className="lead mb-4">
             Welcome to wehyre.ai - your gateway to finding the perfect job
             opportunity. <br /> Find your dream job today!
@@ -90,7 +97,8 @@ const Home = () => {
                 <blockquote className="blockquote mb-0">
                   <p>
                     "I had a fantastic experience using wehyre.ai. Their
-                    personalized job recommendations made my job search so much smoother."
+                    personalized job recommendations made my job search so much
+                    smoother."
                   </p>
                   <footer className="blockquote-footer">
                     Jane Smith, Analyst

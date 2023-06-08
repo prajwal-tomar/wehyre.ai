@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CustomNavbar from './Components/CustomNavbar';
-import Home from './Components/Home';
-import JobListings from './Components/JobListings';
-import CVUpload from './Components/CVUpload';
-import EmployerPortal from './Components/EmployerPortal';
-import AboutUs from './Components/AboutUs';
-import EmployersHome from './Components/EmployersHome';
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import CustomNavbar from "./Components/CustomNavbar";
+import Home from "./Components/Home";
+import JobListings from "./Components/JobListings";
+import CVUpload from "./Components/CVUpload";
+import EmployerPortal from "./Components/EmployerPortal";
+import AboutUs from "./Components/AboutUs";
+import EmployersHome from "./Components/EmployersHome";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
