@@ -19,10 +19,10 @@ const ResumeUploadSection = () => {
       <Container>
         <Row className="justify-content-center">
           <Col md={8}>
-            <h2 className="text-center text-white mb-4">
+            <h2 className="text-center mb-4">
               Take the First Step towards Your Dream Job
             </h2>
-            <h5 className="text-center text-white mb-4">
+            <h5 className="text-center mb-4">
               Upload Your Resume and Stand Out to Employers
             </h5>
             <Form onSubmit={handleSubmit} className='d-flex flex-column '>

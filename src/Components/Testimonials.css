@@ -1,6 +1,6 @@
 .testimonials {
   /* background-image: url("https://cdn.hashnode.com/res/hashnode/image/upload/v1680811516998/I47D_DY1Y.png?auto=format"); */
-  background-color: #151515;
+  background: radial-gradient(circle at center, #2e86de, #4a8fe7, #6699f0, #81a4f9, #9dafff);
   padding: 60px 0;
   background-position: top center;
   background-size: cover;

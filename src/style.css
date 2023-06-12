@@ -236,7 +236,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   /* background: radial-gradient(circle at center, #2e86de, #4a8fe7, #6699f0, #81a4f9, #9dafff); */
   /* background: radial-gradient(circle at center, #2e86de, #4a8fe7, #6699f0, #81a4f9, #9dafff, #1C75D7); */
-  background-color: #1C75D7;
+  background-color: white;
   min-height: 30vh;
 }
 
@@ -259,9 +259,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 200px 0 100px 0;
-  /* background-image: url('./assets/img/123.jpg'); */
   /* background-image: url('https://cdn.hashnode.com/res/hashnode/image/upload/v1680811516998/I47D_DY1Y.png?auto=format'); */
-  background: radial-gradient(circle at center, #2e86de, #4a8fe7, #6699f0, #81a4f9, #9dafff);
+  /* background: radial-gradient(circle at center, #2e86de, #4a8fe7, #6699f0, #81a4f9, #9dafff); */
+  background: linear-gradient(to bottom, #2e86de, #4a8fe7, #6699f0, #81a4f9, #9dafff);
+
   /* background: radial-gradient(circle at center, #FF8C00, #FF4500, #FF0000); */
   /* background-color: #1C75D7; */
   background-position: top center;
@@ -333,6 +334,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: linear-gradient(to top, #2e86de, #4a8fe7, #6699f0, #81a4f9, #9dafff);
+
+
 }
 .skill-bx {
   /* background: #151515; */

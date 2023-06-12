@@ -5,7 +5,7 @@ const HowItWorksSection = () => {
   return (
     <section className="cvupload py-5">
       <Container>
-        <h2 className="text-center text-white mb-5">How Our AI-Driven Job Matching Platform Works</h2>
+        <h2 className="text-center mb-5">How Our AI-Driven Job Matching Platform Works</h2>
         <Row className="justify-content-center">
           <Col md={6} lg={3} className="text-center mb-5">
             <Card className="shadow border">
