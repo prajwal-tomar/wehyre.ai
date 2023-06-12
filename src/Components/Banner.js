@@ -22,10 +22,10 @@ const Banner = () => {
               </Button>
             </div>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            {/* <div className="animate__animated animate__zoomIn"> */}
+          <Col xs={12} md={6} xl={5} className="d-none d-md-block">
+            <div className="animate__animated animate__zoomIn">
               <img src={headerImg} alt="Header Img" />
-            {/* </div> */}
+            </div>
           </Col>
         </Row>
       </Container>
@@ -33,4 +33,4 @@ const Banner = () => {
   );
 };
 
-export default Banner
+export default Banner;

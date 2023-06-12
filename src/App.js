@@ -12,7 +12,6 @@ import { Skills } from "./Components/Skills";
 import Footer from "./Components/Footer";
 import HowItWorksSection from "./Components/HowItWorksSection";
 import Testimonials from "./Components/Testimonials";
-import ResumeUploadSection from "./Components/ResumeUploadSection";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
