@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Container, Form, Button, Table } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Container, Form, Button, Table } from "react-bootstrap";
 
 const EmployerPortal = () => {
   // State for job postings and candidate management
@@ -7,14 +7,14 @@ const EmployerPortal = () => {
   const [candidates, setCandidates] = useState([]);
 
   // Form state for job posting
-  const [jobTitle, setJobTitle] = useState('');
-  const [jobDescription, setJobDescription] = useState('');
-  const [jobRequirements, setJobRequirements] = useState('');
+  const [jobTitle, setJobTitle] = useState("");
+  const [jobDescription, setJobDescription] = useState("");
+  const [jobRequirements, setJobRequirements] = useState("");
 
   // Form state for resume search
-  const [searchKeywords, setSearchKeywords] = useState('');
-  const [searchSkills, setSearchSkills] = useState('');
-  const [searchExperience, setSearchExperience] = useState('');
+  const [searchKeywords, setSearchKeywords] = useState("");
+  const [searchSkills, setSearchSkills] = useState("");
+  const [searchExperience, setSearchExperience] = useState("");
 
   // Handle job posting submission
   const handleJobPostingSubmit = (e) => {
@@ -31,9 +31,9 @@ const EmployerPortal = () => {
     setJobPostings([...jobPostings, newJobPosting]);
 
     // Clear the form fields
-    setJobTitle('');
-    setJobDescription('');
-    setJobRequirements('');
+    setJobTitle("");
+    setJobDescription("");
+    setJobRequirements("");
   };
 
   // Handle candidate search
@@ -102,7 +102,7 @@ const EmployerPortal = () => {
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit" className='mt-2'>
+          <Button variant="primary" type="submit" className="mt-2">
             Post Job
           </Button>
         </Form>
@@ -139,14 +139,14 @@ const EmployerPortal = () => {
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit" className='mt-2'>
+          <Button variant="primary" type="submit" className="mt-2">
             Search
           </Button>
         </Form>
       </div>
 
       {/* Candidate Management */}
-      {/* <div>
+      <div>
         <h4>Candidate Management</h4>
         <Table striped bordered>
           <thead>
@@ -175,7 +175,7 @@ const EmployerPortal = () => {
             ))}
           </tbody>
         </Table>
-      </div> */}
+      </div>
     </Container>
   );
 };

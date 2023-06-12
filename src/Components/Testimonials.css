@@ -1,0 +1,39 @@
+.testimonials {
+  /* background-image: url("https://cdn.hashnode.com/res/hashnode/image/upload/v1680811516998/I47D_DY1Y.png?auto=format"); */
+  background-color: #151515;
+  padding: 60px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.testimonials h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background-color: #151515;
+  border: 1px solid white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.testimonial-card blockquote {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.testimonial-card blockquote footer {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
