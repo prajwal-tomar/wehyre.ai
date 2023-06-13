@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import axios from "axios";
 
 const ResumeUploadSection = () => {
   const [resumeFile, setResumeFile] = useState(null);
+  const [uploadStatus, setUploadStatus] = useState(null);
 
   const handleFileChange = (event) => {
     setResumeFile(event.target.files[0]);
@@ -17,6 +18,8 @@ const ResumeUploadSection = () => {
         const formData = new FormData();
         formData.append("file", resumeFile);
 
+        setUploadStatus("uploading"); // Set upload status to "uploading"
+
         const response = await axios.post(
           "http://localhost:5000/upload",
           formData,
@@ -27,12 +30,15 @@ const ResumeUploadSection = () => {
           }
         );
 
+        setUploadStatus("success");
         console.log("File uploaded successfully");
         console.log("Response:", response.data);
       } catch (error) {
+        setUploadStatus("error");
         console.error("Error uploading file:", error);
       }
     } else {
+      setUploadStatus("no-file");
       console.log("No file selected");
     }
   };
@@ -62,6 +68,30 @@ const ResumeUploadSection = () => {
                 Submit Resume
               </Button>
             </Form>
+
+            {uploadStatus === "no-file" && (
+              <Alert variant="danger" className="mt-3">
+                No file selected. Please choose a file to upload.
+              </Alert>
+            )}
+
+            {uploadStatus === "error" && (
+              <Alert variant="danger" className="mt-3">
+                Error uploading file. Please try again later.
+              </Alert>
+            )}
+
+            {uploadStatus === "uploading" && (
+              <Alert variant="info" className="mt-3">
+                File uploading...
+              </Alert>
+            )}
+
+            {uploadStatus === "success" && (
+              <Alert variant="success" className="mt-3">
+                Resume uploaded successfully.
+              </Alert>
+            )}
           </Col>
         </Row>
       </Container>
