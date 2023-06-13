@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import axios from "axios";
 
 const ResumeUploadSection = () => {
   const [resumeFile, setResumeFile] = useState(null);
@@ -8,10 +9,32 @@ const ResumeUploadSection = () => {
     setResumeFile(event.target.files[0]);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Handle resume file submission here
-    console.log("Resume file:", resumeFile);
+
+    if (resumeFile) {
+      try {
+        const formData = new FormData();
+        formData.append("file", resumeFile);
+
+        const response = await axios.post(
+          "http://localhost:5000/upload",
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
+
+        console.log("File uploaded successfully");
+        console.log("Response:", response.data);
+      } catch (error) {
+        console.error("Error uploading file:", error);
+      }
+    } else {
+      console.log("No file selected");
+    }
   };
 
   return (
@@ -25,15 +48,13 @@ const ResumeUploadSection = () => {
             <h5 className="text-center mb-4">
               Upload Your Resume and Stand Out to Employers
             </h5>
-            <Form onSubmit={handleSubmit} className='d-flex flex-column '>
+            <Form onSubmit={handleSubmit} className="d-flex flex-column ">
               <Form.Group controlId="resumeUpload">
                 <Form.Label>Upload CV</Form.Label>
                 <Form.Control
                   type="file"
-                  id="resumeFile"
                   label="Choose File"
                   onChange={handleFileChange}
-                  custom
                   accept=".pdf,.doc,.docx"
                 />
               </Form.Group>

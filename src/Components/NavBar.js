@@ -12,7 +12,6 @@ const NavBar = () => {
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const { isAuthenticated } = useAuth0();
-  console.log(isAuthenticated);
 
   useEffect(() => {
     const onScroll = () => {
