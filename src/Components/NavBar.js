@@ -32,7 +32,8 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className="scrolled">
+      {/* className={scrolled ? "scrolled" : ""} */}
       <Container>
         <Navbar.Brand href="/" style={{ width: "130px" }}>
           <img src={logo} alt="Logo" />
@@ -51,7 +52,7 @@ const NavBar = () => {
             >
               Home
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               href="/employers-home"
               className={` 'mx-0' ${
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
@@ -59,7 +60,7 @@ const NavBar = () => {
               onClick={() => onUpdateActiveLink("foremployers")}
             >
               For Employers
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               href="/about-us"
               className={

@@ -12,6 +12,7 @@ import { Skills } from "./Components/Skills";
 import Footer from "./Components/Footer";
 import HowItWorksSection from "./Components/HowItWorksSection";
 import Testimonials from "./Components/Testimonials";
+
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,9 +27,11 @@ const App = () => {
             <>
               <Banner />
               <Skills />
-              <CVUpload />
+              {/* <CVUpload /> */}
+              <ContactForm />
               <Testimonials />
               <HowItWorksSection />
+              {/* <AboutUs /> */}
               <Footer />
             </>
           }

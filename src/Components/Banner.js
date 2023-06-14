@@ -10,9 +10,11 @@ const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <div className="animate__animated animate__fadeIn">
               <span className="tagline">
-                Unlock Your Potential. Connect with Your Dream Job.
+                Unlock Your Potential: Find Your Dream Job Today!
               </span>
-              <h1 className="text-white">Connecting Talented Job Seekers with the Right Employers</h1>
+              <h1 className="text-white">
+                Connecting Talented Job Seekers with the Right Employers
+              </h1>
               <p>
                 Welcome to wehyre.ai - your gateway to finding the perfect job
                 opportunity. <br /> Find your dream job today!
@@ -29,6 +31,15 @@ const Banner = () => {
           </Col>
         </Row>
       </Container>
+      {/* <style>
+        {`
+        @media (max-width: 576px) {
+          h1 {
+            font-size: 10px;
+          }
+        }
+        `}
+      </style> */}
     </section>
   );
 };

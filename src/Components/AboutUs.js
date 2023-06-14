@@ -1,15 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Footer from "./Footer";
 
 const AboutUs = () => {
   return (
-    <section className="banner" id="home">
+    <section className="aboutus">
       <Container className="my-0">
-        <h1 className="text-center mb-4">About Us</h1>
+        <h1 className="text-center mb-4 text-white">About Us</h1>
 
         {/* Company Overview */}
         <div className="mb-4">
-          <h4>Company Overview</h4>
+          <h2 className="text-white">Company Overview</h2>
           <p>
             At wehyre.ai, we are dedicated to connecting talented job seekers
             with the right employers. Our mission is to streamline the
@@ -22,7 +23,7 @@ const AboutUs = () => {
 
         {/* Team and Expertise */}
         <div className="mb-4">
-          <h4>Team and Expertise</h4>
+          <h2 className="text-white">Team and Expertise</h2>
           <p>
             Our team at wehyre.ai consists of industry experts with extensive
             experience in AI-powered recruitment and talent acquisition. We have
@@ -36,7 +37,7 @@ const AboutUs = () => {
 
         {/* Contact Information */}
         <div>
-          <h4>Contact Information</h4>
+          <h2 className="text-white">Contact Information</h2>
           <Row className="mb-3">
             <Col>Email:</Col>
             <Col>
@@ -57,6 +58,25 @@ const AboutUs = () => {
           </Row>
         </div>
       </Container>
+      <footer className="footer mt-auto py-3">
+        <Container>
+          <Row>
+            <Col className="text-center">
+              <p>&copy; 2023 wehyre.ai. All rights reserved.</p>
+            </Col>
+          </Row>
+        </Container>
+
+        <style jsx>{`
+          .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+          }
+        `}</style>
+      </footer>
     </section>
   );
 };
