@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import headerImg from "../assets/img/creative.svg";
+import headerImg from "../assets/img/ai.png";
 import "animate.css";
 
 const Banner = () => {
@@ -13,7 +13,7 @@ const Banner = () => {
                 Unlock Your Potential: Find Your Dream Job Today!
               </span>
               <h1 className="text-white">
-                Connecting Talented Job Seekers with the Right Employers
+                Linking Talented Job Seekers with the Right Employers
               </h1>
               <p>
                 Welcome to wehyre.ai - your gateway to finding the perfect job
@@ -31,15 +31,15 @@ const Banner = () => {
           </Col>
         </Row>
       </Container>
-      {/* <style>
+      <style>
         {`
-        @media (max-width: 576px) {
-          h1 {
-            font-size: 10px;
+        @media screen and (max-width: 480px) {
+          .h1 {
+            font-size: 18px;
           }
         }
         `}
-      </style> */}
+      </style>
     </section>
   );
 };
