@@ -30,7 +30,7 @@ const ContactForm = () => {
       console.log("Uploading...");
       setShowUploadingAlert(true);
 
-      const response = await fetch("http://127.0.0.1:5000/add_entry", {
+      const response = await fetch("https://wehyre-ai-api.onrender.com/add_entry", {
         method: "POST",
         body: formData,
       });
