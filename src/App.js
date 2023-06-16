@@ -14,6 +14,7 @@ import HowItWorksSection from "./Components/HowItWorksSection";
 import Testimonials from "./Components/Testimonials";
 
 import "./style.css";
+// eslint-disable-next-line
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {

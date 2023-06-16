@@ -50,9 +50,29 @@ const AboutUs = () => {
           <Row>
             <Col>Social Media:</Col>
             <Col>
-              <a href="https://www.linkedin.com/company/wehyre-ai" target="_blank">LinkedIn</a>{" "}
-              | <a href="https://www.facebook.com/wehyreai" target="_blank">Facebook</a> |{" "}
-              <a href="https://www.instagram.com/wehyre.ai" target="_blank">Instagram</a>
+              <a
+                href="https://www.linkedin.com/company/wehyre-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>{" "}
+              |{" "}
+              <a
+                href="https://www.facebook.com/wehyreai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>{" "}
+              |{" "}
+              <a
+                href="https://www.instagram.com/wehyre.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
             </Col>
           </Row>
         </div>

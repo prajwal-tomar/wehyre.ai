@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo1.png";
+import logo from "../assets/img/logo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -8,24 +8,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const { isAuthenticated } = useAuth0();
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
@@ -76,13 +61,22 @@ const NavBar = () => {
               <a
                 href="https://www.linkedin.com/company/wehyre-ai/about/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="https://www.facebook.com/wehyreai" target="_blank">
+              <a
+                href="https://www.facebook.com/wehyreai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="https://www.instagram.com/wehyre.ai" target="_blank">
+              <a
+                href="https://www.instagram.com/wehyre.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navIcon3} alt="" />
               </a>
             </div>

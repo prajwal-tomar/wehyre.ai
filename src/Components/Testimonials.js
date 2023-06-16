@@ -15,7 +15,7 @@ const Testimonials = () => {
                     "wehyre.ai has been a game-changer for my job search. The personalized job matching feature helped me find the perfect opportunity that aligned with my skills and experience."
                   </p>
                   <footer className="blockquote-footer">
-                    John Doe, Software Engineer
+                    Rishab panth, Software Engineer
                   </footer>
                 </blockquote>
               </Card.Body>
@@ -29,7 +29,7 @@ const Testimonials = () => {
                     "Thanks to wehyre.ai, I found my dream job within weeks. The platform's personalized job matching feature ensured my application stood out from the competition."
                   </p>
                   <footer className="blockquote-footer">
-                    Jane Smith, Marketing Specialist
+                    Manya Gupta, Marketing Manager
                   </footer>
                 </blockquote>
               </Card.Body>
@@ -43,7 +43,7 @@ const Testimonials = () => {
                     "I highly recommend wehyre.ai to job seekers. The streamlined recruitment process saved me time and effort, allowing me to focus on finding the right opportunities."
                   </p>
                   <footer className="blockquote-footer">
-                    Sarah Johnson, Project Manager
+                    Arjun Goyal, Analyst
                   </footer>
                 </blockquote>
               </Card.Body>
