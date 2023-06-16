@@ -9,9 +9,10 @@ const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <div className="animate__animated animate__fadeIn">
-              <span className="tagline">
+              <span className="tagline d-none d-sm-block">
                 Unlock Your Potential: Find Your Dream Job Today!
               </span>
+
               <h1 className="text-white">
                 Linking Talented Job Seekers with the Right Employers
               </h1>

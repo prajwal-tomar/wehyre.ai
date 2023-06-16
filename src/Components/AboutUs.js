@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Footer from "./Footer";
 
 const AboutUs = () => {
   return (
@@ -41,19 +40,19 @@ const AboutUs = () => {
           <Row className="mb-3">
             <Col>Email:</Col>
             <Col>
-              <a href="mailto:info@wehyre.ai">info@wehyre.ai</a>
+              <a href="mailto:wehyre.ai@gmail.com">wehyre.ai@gmail.com</a>
             </Col>
           </Row>
           <Row className="mb-3">
             <Col>Phone:</Col>
-            <Col>+1 123-456-7890</Col>
+            <Col>+91 9694204207</Col>
           </Row>
           <Row>
             <Col>Social Media:</Col>
             <Col>
-              <a href="https://www.linkedin.com/company/wehyre-ai">LinkedIn</a>{" "}
-              | <a href="https://twitter.com/wehyre_ai">Twitter</a> |{" "}
-              <a href="https://www.instagram.com/wehyre_ai">Instagram</a>
+              <a href="https://www.linkedin.com/company/wehyre-ai" target="_blank">LinkedIn</a>{" "}
+              | <a href="https://www.facebook.com/wehyreai" target="_blank">Facebook</a> |{" "}
+              <a href="https://www.instagram.com/wehyre.ai" target="_blank">Instagram</a>
             </Col>
           </Row>
         </div>
