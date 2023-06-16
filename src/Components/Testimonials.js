@@ -12,7 +12,7 @@ const Testimonials = () => {
               <Card.Body>
                 <blockquote className="blockquote mb-0">
                   <p>
-                    "wehyre.ai has been a game-changer for my job search. The personalized job matching feature helped me find the perfect opportunity that aligned with my skills and experience."
+                    "wehyre has been a game-changer for my job search. The personalized job matching feature helped me find the perfect opportunity that aligned with my skills and experience."
                   </p>
                   <footer className="blockquote-footer">
                     Rishab panth, Software Engineer
@@ -26,7 +26,7 @@ const Testimonials = () => {
               <Card.Body>
                 <blockquote className="blockquote mb-0">
                   <p>
-                    "Thanks to wehyre.ai, I found my dream job within weeks. The platform's personalized job matching feature ensured my application stood out from the competition."
+                    "Thanks to wehyre, I found my dream job within weeks. The platform's personalized job matching feature ensured my application stood out from the competition."
                   </p>
                   <footer className="blockquote-footer">
                     Manya Gupta, Marketing Manager
@@ -40,7 +40,7 @@ const Testimonials = () => {
               <Card.Body>
                 <blockquote className="blockquote mb-0">
                   <p>
-                    "I highly recommend wehyre.ai to job seekers. The streamlined recruitment process saved me time and effort, allowing me to focus on finding the right opportunities."
+                    "I highly recommend wehyre to job seekers. The streamlined recruitment process saved me time and effort, allowing me to focus on finding the right opportunities."
                   </p>
                   <footer className="blockquote-footer">
                     Arjun Goyal, Analyst

@@ -11,7 +11,7 @@ const AboutUs = () => {
         <div className="mb-4">
           <h2 className="text-white">Company Overview</h2>
           <p>
-            At wehyre.ai, we are dedicated to connecting talented job seekers
+            At wehyre, we are dedicated to connecting talented job seekers
             with the right employers. Our mission is to streamline the
             recruitment process by leveraging AI-powered resume scanning and
             personalized job matching algorithms. We believe in providing a
@@ -24,7 +24,7 @@ const AboutUs = () => {
         <div className="mb-4">
           <h2 className="text-white">Team and Expertise</h2>
           <p>
-            Our team at wehyre.ai consists of industry experts with extensive
+            Our team at wehyre consists of industry experts with extensive
             experience in AI-powered recruitment and talent acquisition. We have
             built a strong foundation of knowledge and expertise in leveraging
             artificial intelligence to revolutionize the hiring process. With
@@ -40,7 +40,7 @@ const AboutUs = () => {
           <Row className="mb-3">
             <Col>Email:</Col>
             <Col>
-              <a href="mailto:wehyre.ai@gmail.com">wehyre.ai@gmail.com</a>
+              <a href="mailto:wehyre@gmail.com">wehyre.ai@gmail.com</a>
             </Col>
           </Row>
           <Row className="mb-3">
@@ -67,7 +67,7 @@ const AboutUs = () => {
               </a>{" "}
               |{" "}
               <a
-                href="https://www.instagram.com/wehyre.ai"
+                href="https://www.instagram.com/wehyre"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -81,7 +81,7 @@ const AboutUs = () => {
         <Container>
           <Row>
             <Col className="text-center">
-              <p>&copy; 2023 wehyre.ai. All rights reserved.</p>
+              <p>&copy; 2023 wehyre. All rights reserved.</p>
             </Col>
           </Row>
         </Container>

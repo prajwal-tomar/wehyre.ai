@@ -17,7 +17,7 @@ const Banner = () => {
                 Linking Talented Job Seekers with the Right Employers
               </h1>
               <p>
-                Welcome to wehyre.ai - your gateway to finding the perfect job
+                Welcome to wehyre - your gateway to finding the perfect job
                 opportunity. <br /> Find your dream job today!
               </p>
               <Button variant="primary" className="mt-3" href="#cvupload">

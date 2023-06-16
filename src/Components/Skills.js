@@ -9,8 +9,8 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2 className="text-capitalize">Why Choose Our AI-Driven Job Matching Platform?</h2>
               <p>
-                Choose wehyre.ai for a seamless and effective job search and
-                recruitment experience.With personalized job matching, we take
+                Choose wehyre for a seamless and effective job search and
+                recruitment experience. With personalized job matching, we take
                 into account your skills, experience, and preferences to connect
                 you with opportunities that align with your career goals.
               </p>
